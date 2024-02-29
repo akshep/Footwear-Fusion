@@ -287,3 +287,27 @@ body {
   transition: var(--transition-1);
 }
 
+
+/*-----------------------------------*\
+ * #HERO
+\*-----------------------------------*/
+
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.hero-title { margin-bottom: 10px;}
+
+.hero-title > strong { display: block;}
+
+.hero-text {
+  
+}
