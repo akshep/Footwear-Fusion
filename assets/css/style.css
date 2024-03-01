@@ -377,33 +377,37 @@ body {
   padding-block: 45px 25px;
 }
 
+/*-----------------------------------*\
+ * #PRODUCTS
+\*-----------------------------------*/
 
-.has-scrollbar {
+.product .section-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.filter-list {
+
   display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scroll-snap-type: inline mandatory;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
-.has-scrollbar > li {
-  min-width: 100%;
-  scroll-snap-align: start;
+.filter-btn {
+  color: var(--onyx);
+  padding: 10px 16px;
+  font-family: var(--ff-roboto);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  border: 1px solid var(--gainsboro);
+  border-radius: 30px;
 }
 
-.has-scrollbar::-webkit-scrollbar { height: 10px; }
-
-.has-scrollbar::-webkit-scrollbar-track {
-  background: var(--white);
-  border-radius: 20px;
-  outline: 2px solid var(--bittersweet);
-}
-
-.has-scrollbar::-webkit-scrollbar-thumb {
+.filter-btn.active {
   background: var(--bittersweet);
-  border: 2px solid var(--white);
-  border-radius: 20px;
+  color: var(--white);
+  border-color: var(--bittersweet);
 }
-
-.has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
-
